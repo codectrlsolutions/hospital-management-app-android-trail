@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardCornerRadius="5dp"
+    android:id="@+id/cardView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout_1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="Patient Information"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_patient_name"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="Patient Name"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout_2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="Billing Details"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_billings_details"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="Billings Details"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout_3"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="Insurance Information"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_insurance_information"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="Insurance Information"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout_4"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="Payment Information"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_payment_information"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="Payment Information"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout_5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="Payment Method"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_payment_method"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="Payment Method"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout_6"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="Payment Status"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_payment_status"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="Payment status"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout_7"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="General Reports"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_general_reports"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="General Reports"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout_8"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="Discount and Promotions"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_discount_and_promotions"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/normal_text"
+                android:lines="1"
+                android:text="Discount and Promotions"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

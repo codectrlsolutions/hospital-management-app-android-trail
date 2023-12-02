@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormBookAppointmentActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardView_toolBar">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolBar">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_back_arrow"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/baseline_arrow_back"
+                android:contentDescription="Back arrow"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_hi"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:text="Appointment Now"/>
+        </androidx.appcompat.widget.Toolbar>
+    </androidx.cardview.widget.CardView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_select_department"
+        android:layout_below="@+id/cardView_toolBar"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:spinnerMode="dropdown"
+        android:scrollbars="vertical"
+        android:background="@android:drawable/btn_dropdown"
+        android:gravity="center"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_select_doctors"
+        android:layout_below="@+id/spinner_select_department"
+        android:paddingHorizontal="16dp"
+        android:spinnerMode="dropdown"
+        android:background="@android:drawable/btn_dropdown"
+        android:gravity="center"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_select_service"
+        android:layout_below="@+id/spinner_select_doctors"
+        android:paddingHorizontal="16dp"
+        android:spinnerMode="dropdown"
+        android:background="@android:drawable/btn_dropdown"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_fullName"
+        android:layout_below="@+id/spinner_select_service"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/text_color"
+        android:text="Full Name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_fullName"
+        android:layout_below="@+id/textView_fullName"
+        android:textColor="@color/text_color"
+        android:paddingHorizontal="16dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_phoneNumber"
+        android:layout_below="@+id/editText_fullName"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/text_color"
+        android:text="Phone Number"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_phone_number"
+        android:layout_below="@+id/textView_phoneNumber"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/text_color"
+        android:inputType="phone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_date"
+        android:layout_below="@+id/editText_phone_number"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/text_color"
+        android:text="Date"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_date"
+        android:layout_below="@+id/textView_date"
+        android:hint="Enter date (dd-MM-yyyy)"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/text_color"
+        android:inputType="date"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_time"
+        android:layout_below="@+id/editText_date"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/text_color"
+        android:text="Time"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_time"
+        android:layout_below="@+id/textView_time"
+        android:hint="Enter date (HH:mm)"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/text_color"
+        android:inputType="time"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_message"
+        android:layout_below="@+id/editText_time"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/text_color"
+        android:text="Message"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_message"
+        android:layout_below="@+id/textView_message"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/text_color"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/textView_add_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:text="Add Appointment"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@drawable/button_background"/>
+
+</RelativeLayout>

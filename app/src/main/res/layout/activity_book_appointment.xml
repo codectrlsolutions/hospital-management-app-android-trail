@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookAppointmentActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolBar">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_back_arrow"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/baseline_arrow_back"
+                android:contentDescription="Back arrow"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_book_appointment"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:text="Book Appointment"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/cardView_book_Appointment"
+                android:background="@drawable/book_appointment_2"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_bookAppointment"
+                    android:textColor="@color/text_color_blue"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:text="Book Appointment"
+                    android:paddingHorizontal="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/white"
+                    android:layout_marginBottom="16dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Departments"
+                    android:textSize="25dp"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_seeAll_categories"
+                    android:text="See All"
+                    android:background="@drawable/button_background"
+                    android:textSize="25dp"
+                    android:paddingHorizontal="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/cardView_search_bar_section_1"
+                        android:layout_marginEnd="5dp"
+                        app:cardCornerRadius="@dimen/cardCornerRadius"
+                        android:elevation="@dimen/card_elevation">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/doctor"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="General Practitioners"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/cardView_search_bar_section_2"
+                        android:padding="10dp"
+                        android:layout_marginEnd="5dp"
+                        app:cardCornerRadius="@dimen/cardCornerRadius"
+                        android:elevation="@dimen/card_elevation">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/doctor"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Surgeons"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/cardView_search_bar_section_3"
+                        android:padding="10dp"
+                        android:layout_marginEnd="5dp"
+                        app:cardCornerRadius="@dimen/cardCornerRadius"
+                        android:elevation="@dimen/card_elevation">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/doctor"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Emergency Medicine Physicians"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/cardView_search_bar_section_4"
+                        android:padding="10dp"
+                        app:cardCornerRadius="@dimen/cardCornerRadius"
+                        android:elevation="@dimen/card_elevation">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/doctor"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Anesthesiologists"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/cardView_search_bar_section_5"
+                        android:padding="10dp"
+                        app:cardCornerRadius="@dimen/cardCornerRadius"
+                        android:elevation="@dimen/card_elevation">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/doctor"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="General Practitioners"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/cardView_search_bar_section_6"
+                        android:padding="10dp"
+                        app:cardCornerRadius="@dimen/cardCornerRadius"
+                        android:elevation="@dimen/card_elevation">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/doctor"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Radiologists"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/cardView_search_bar_section_7"
+                        android:padding="10dp"
+                        app:cardCornerRadius="@dimen/cardCornerRadius"
+                        android:elevation="@dimen/card_elevation">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/doctor"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pathologists"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/cardView_search_bar_section_8"
+                        android:padding="10dp"
+                        app:cardCornerRadius="@dimen/cardCornerRadius"
+                        android:elevation="@dimen/card_elevation">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/doctor"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ophthalmologists"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/cardView_search_bar_section_9"
+                        android:padding="10dp"
+                        app:cardCornerRadius="@dimen/cardCornerRadius"
+                        android:elevation="@dimen/card_elevation">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/doctor"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dentists"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/cardView_search_bar_section_10"
+                        android:padding="10dp"
+                        app:cardCornerRadius="@dimen/cardCornerRadius"
+                        android:elevation="@dimen/card_elevation">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/doctor"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Physiotherapists"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Doctors List"
+                    android:textSize="25dp"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_seeAll_doctors"
+                    android:text="See All"
+                    android:background="@drawable/button_background"
+                    android:textSize="25dp"
+                    android:paddingHorizontal="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerView_categories"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

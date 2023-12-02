@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SignInActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:padding="16dp"
+        android:id="@+id/cardView"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_login"
+                android:layout_gravity="center"
+                android:textColor="@color/text_color"
+                android:text="Sign In"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_support_text"
+                android:layout_gravity="center"
+                android:textColor="@color/text_color"
+                android:text="Please sign in to continue"
+                android:textSize="@dimen/normal_text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_email"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/text_color"
+                android:text="Email"
+                android:textSize="@dimen/normal_text"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_email_address"
+                android:textColor="@color/text_color"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_password"
+                android:textColor="@color/text_color"
+                android:text="Password"
+                android:textSize="@dimen/normal_text"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_password"
+                android:textColor="@color/text_color"
+                android:hint="Enter Password"
+                android:inputType="textPassword"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:id="@+id/textView_forgot_password"
+                android:text="Forgot Password"
+                android:textColor="@color/text_color_blue"
+                android:textStyle="bold"
+                android:textSize="@dimen/normal_text"/>
+            <TextView
+                android:id="@+id/textView_btn_signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:textColor="@color/text_color"
+                android:background="@drawable/button_background"
+                android:text="Sign In"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout_btn_signup"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView_dont_have_account_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/normal_text"
+                    android:text="Don't have a account?"/>
+                <TextView
+                    android:id="@+id/textView_btn_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/normal_text"
+                    android:text="Sign UP"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color_blue"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
